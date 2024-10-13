@@ -1,22 +1,19 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Arial Black', sans-serif; /* Changed to a bolder font family */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
-  /* background: linear-gradient(#b75c00, #322a39) */
-  background-image: url('./Components/Assets/Got_Next.png');
-  background-size: 500px; /* This makes sure the image covers the whole page */
-  background-position: center; /* Centers the image */
+  background: linear-gradient(#e38842, #3f271b);
+  /* background-color: #9c1010; */
+  /* background-size: 500px; This makes sure the image covers the whole page */
+  /* background-position: center; Centers the image */
   overflow: hidden; /* Prevents both vertical and horizontal scrolling */
-  
 }
-
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 
