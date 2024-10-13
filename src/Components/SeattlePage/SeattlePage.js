@@ -41,9 +41,9 @@ const SeattlePage = () => {
             <h1>Seattle Parks Waitlist</h1>
             <select onChange={(e) => setSelectedPark(e.target.value)} value={selectedPark}>
                 <option value="">Select a park</option>
-                <option value="Park1">Park 1</option>
-                <option value="Park2">Park 2</option>
-                <option value="Park3">Park 3</option>
+                <option value="Park1">Christie Park</option>
+                <option value="Park2">Cowen Park</option>
+                <option value="Park3">Cascade Playground</option>
             </select>
             {selectedPark && (
                 <form onSubmit={handleSubmit}>
@@ -67,4 +67,6 @@ const SeattlePage = () => {
 };
 
 export default SeattlePage;
+
+
 
