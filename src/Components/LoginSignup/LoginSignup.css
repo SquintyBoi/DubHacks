@@ -4,36 +4,33 @@
     margin: auto;
     margin-top: 100px;
     width: 600px;
-    background: #ffffff; /* White background for container */
+    background: #FFFFFF; /* White background for container */
     padding: 20px; /* Added padding for a cleaner look */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    border-radius: 50px; /* Rounded corners for smoother appearance */
-    align-items: flex-start; /* Align items to the left */
+    border-radius: 10px; /* Rounded corners for smoother appearance */
 }
 
 .header {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Align header content to the left */
-    gap: 25px;
+    align-items: center;
+    gap: 9px;
     width: 100%;
     margin-top: 30px;
 }
 
 .text {
-    color: #ffffff; /* White text color */
+    color: #FFFFFF; /* White text color */
     font-size: 48px;
     font-weight: 700;
-    text-align: left; /* Align the header text to the left */
-    width: 100%; /* Ensure it takes the full width */
+    text-align: center; /* Center the header text */
 }
 
 .underline {
-    width: 200px;
+    width: 61px;
     height: 6px;
-    background: #9B4F16; /* Match the color of the buttons */
+    background: #DD7E37; /* Match the color of the buttons */
     border-radius: 9px;
-    margin-left: 0; /* Align underline to the left */
 }
 
 .inputs {
@@ -41,13 +38,12 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
-    width: 100%; /* Ensure inputs take full width */
 }
 
 .input {
     display: flex;
     align-items: center;
-    margin: 0; /* Remove auto margin to lean to the left */
+    margin: auto;
     width: 480px;
     height: 80px;
     background: #EAEAEA; /* Light gray background */
@@ -56,10 +52,7 @@
 }
 
 .input img {
-    margin: 0 20px;
-    border-radius: 80%;
-    width: 45px; /* Reduced width to make the icon smaller */
-    height: 45px; /* Reduced height to make the icon smaller */
+    margin: 0 30px;
 }
 
 .input input {
@@ -68,28 +61,27 @@
     background: transparent;
     border: none;
     outline: none;
-    color: #000000; /* Black text color */
+    color: #FFFFFF; /* White text color */
     font-size: 19px;
 }
 
 .forgot-password {
-    padding-left: 0; /* Align text to the left */
+    padding-left: 62px;
     margin-top: 27px;
     color: #FFFFFF; /* White text color */
     font-size: 18px;
-    align-self: flex-start; /* Align forgot password text to the left */
 }
 
 .forgot-password span {
-    color: #9a4e15; /* Match button color for consistency */
+    color: #DD7E37; /* Match button color for consistency */
     cursor: pointer;
 }
 
 .submit-container {
     display: flex;
-    justify-content: flex-start; /* Align submit buttons to the left */
+    justify-content: center; /* Center submit buttons */
     gap: 30px;
-    margin: 60px 0; /* Remove auto margins for better alignment */
+    margin: 60px auto;
 }
 
 .submit {
@@ -99,8 +91,8 @@
     width: 240px; /* Slightly larger width */
     height: 70px; /* Slightly larger height */
     color: #FFFFFF; /* White text color */
-    background: #9a4e15; /* Updated button color */
-    border-radius: 100px;
+    background: #DD7E37; /* Updated button color */
+    border-radius: 50px;
     font-size: 20px; /* Increased font size for emphasis */
     font-weight: 700;
     cursor: pointer;
@@ -108,12 +100,12 @@
 }
 
 .submit:hover {
-    background: #e97c29; /* Darker shade on hover for effect */
+    background: #C26E32; /* Darker shade on hover for effect */
 }
 
 .gray {
     background: #EAEAEA; /* Light gray background */
-    color: #9B4F16; /* Text color for gray button */
+    color: #676767; /* Text color for gray button */
 }
 
 .submit-button {
@@ -124,24 +116,4 @@
     z-index: 1000; /* Ensure it appears above other content */
     width: 200px; /* Increased width */
     height: 50px; /* Increased height */
-}
-.container man {
-    width: 50px; /* Adjust this value to make the image smaller */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Ensures the image can be centered or positioned correctly */
-    margin-left: auto; /* Pushes the image to the right */
-    margin-right: 0; /* Removes any right margin */
-    margin-top: 20px; /* Optional: adds space above the image */
-}
-.container {
-    position: relative; /* Set relative positioning for the container */
-}
-
-.man-image {
-    width: 500px; /* Set a desired width */
-    height: 500px; /* Set a specific height */
-    position: absolute; /* Positioning */
-    top: 200px; /* Adjust as needed */
-    right: 200px; /* Adjust as needed */
-    z-index: 1; /* Ensure it’s above other content */
 }
