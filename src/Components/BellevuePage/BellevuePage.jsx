@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './BellevuePage.css';
+import './BellevuePage.css'; // Make sure this file exists
 import { useNavigate } from 'react-router-dom';
 
 const BellevuePage = () => {
@@ -13,7 +13,7 @@ const BellevuePage = () => {
         location3: Array(10).fill(''),
     });
 
-    // Function to handle button clicks
+    // Function to handle button clicks for dropdowns
     const handleDropdownToggle = (location) => {
         setOpenDropdown(openDropdown === location ? null : location);
     };
@@ -23,6 +23,13 @@ const BellevuePage = () => {
         const updatedNames = [...userNames[location]];
         updatedNames[index] = event.target.value;
         setUserNames({ ...userNames, [location]: updatedNames });
+    };
+
+    // Function to handle logout
+    const handleLogout = () => {
+        // Perform any logout operations (e.g., clearing tokens)
+        // Redirect to LoginSignup page
+        navigate('/'); // Redirects to the login/signup page
     };
 
     return (
@@ -89,6 +96,13 @@ const BellevuePage = () => {
                         </div>
                     )}
                 </div>
+            </div>
+
+            {/* Logout Button */}
+            <div className="logout-container">
+                <button className="logout-button" onClick={handleLogout}>
+                    Logout
+                </button>
             </div>
         </div>
     );
