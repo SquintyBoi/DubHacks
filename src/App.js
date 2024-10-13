@@ -1,7 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import LoginSignup from './Components/LoginSignup/LoginSignup';
-/*import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';*/
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './Components/HomePage/HomePage'; // Create this component
+import SeattlePage from './Components/SeattlePage/SeattlePage';
+import RentonPage from './Components/RentonPage/RentonPage';
+import BellevuePage from './Components/BellevuePage/BellevuePage';
 
 const center = {
   lat: 37.970833,
@@ -10,23 +14,20 @@ const center = {
 
 function App() {
   return (
-    <div>
-      <LoginSignup/>
-    </div>
-    
+    <Router>
+      <Routes>
+        <Route path="/" element={<LoginSignup />} /> {/* This should render the LoginSignup component */}
+        <Route path="/home" element={<HomePage />} />
+      </Routes>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/seattle" element={<SeattlePage />} />
+        <Route path="/renton" element={<RentonPage />} />
+        <Route path="/bellevue" element={<BellevuePage />} />
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
 
-/*
-<LoadScript googleMapsApiKey={process.env.REACT_APP_GOOGLE_MAPS_API_KEY}>
-                <GoogleMap
-                    mapContainerStyle={{ height: "400px", width: "100%" }}
-                    center={center}
-                    zoom={15}
-                >
-                    <Marker position={center} />
-                </GoogleMap>
-      </LoadScript>
-*/
