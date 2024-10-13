@@ -9,6 +9,16 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     border-radius: 50px; /* Rounded corners for smoother appearance */
     align-items: flex-start; /* Align items to the left */
+    position: relative; /* Set relative positioning for the container */
+}
+
+.man-image {
+    width: 200px; 
+    height: 200px;
+    position: absolute;
+    top: 20px;
+    right: 20px; 
+    z-index: 1; 
 }
 
 .header {
@@ -21,7 +31,7 @@
 }
 
 .text {
-    color: #ffffff; /* White text color */
+    color: #ffffff; /* Change to black for better visibility */
     font-size: 48px;
     font-weight: 700;
     text-align: left; /* Align the header text to the left */
@@ -75,7 +85,7 @@
 .forgot-password {
     padding-left: 0; /* Align text to the left */
     margin-top: 27px;
-    color: #FFFFFF; /* White text color */
+    color: #000000; /* Black text color */
     font-size: 18px;
     align-self: flex-start; /* Align forgot password text to the left */
 }
@@ -116,32 +126,3 @@
     color: #9B4F16; /* Text color for gray button */
 }
 
-.submit-button {
-    position: fixed; /* Fixes the button to the viewport */
-    bottom: 330px; /* Space from the bottom */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust for centering */
-    z-index: 1000; /* Ensure it appears above other content */
-    width: 200px; /* Increased width */
-    height: 50px; /* Increased height */
-}
-.container man {
-    width: 50px; /* Adjust this value to make the image smaller */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Ensures the image can be centered or positioned correctly */
-    margin-left: auto; /* Pushes the image to the right */
-    margin-right: 0; /* Removes any right margin */
-    margin-top: 20px; /* Optional: adds space above the image */
-}
-.container {
-    position: relative; /* Set relative positioning for the container */
-}
-
-.man-image {
-    width: 500px; /* Set a desired width */
-    height: 500px; /* Set a specific height */
-    position: absolute; /* Positioning */
-    top: 200px; /* Adjust as needed */
-    right: 200px; /* Adjust as needed */
-    z-index: 1; /* Ensure it’s above other content */
-}
