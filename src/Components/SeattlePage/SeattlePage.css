@@ -30,7 +30,7 @@ input {
 button {
     width: 100%; /* Full width */
     padding: 10px; /* Add padding */
-    background-color: #28a745; /* Green background */
+    background-color: #9B4F16; /* Green background */
     color: white; /* White text */
     border: none; /* Remove border */
     border-radius: 4px; /* Rounded corners */
@@ -38,7 +38,7 @@ button {
 }
 
 button:hover {
-    background-color: #218838; /* Darker green on hover */
+    background-color: #9B4F16; /* Darker green on hover */
 }
 
 ul {
@@ -50,3 +50,4 @@ li {
     margin: 5px 0; /* Space between list items */
     text-align: center; /* Center list items */
 }
+
