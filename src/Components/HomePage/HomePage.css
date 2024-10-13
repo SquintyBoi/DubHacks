@@ -3,7 +3,7 @@
     flex-direction: column;
     margin: auto;
     margin-top: 100px;
-    width: 600px;
+    width: 800px;
     background: #b5771a;
     padding-bottom: 30px;
     align-items: center;
@@ -53,3 +53,4 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
