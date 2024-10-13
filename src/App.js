@@ -20,7 +20,6 @@ function App() {
         <Route path="/home" element={<HomePage />} />
       </Routes>
       <Routes>
-        <Route path="/" element={<HomePage />} />
         <Route path="/seattle" element={<SeattlePage />} />
         <Route path="/renton" element={<RentonPage />} />
         <Route path="/bellevue" element={<BellevuePage />} />
@@ -30,4 +29,5 @@ function App() {
 }
 
 export default App;
+
 
