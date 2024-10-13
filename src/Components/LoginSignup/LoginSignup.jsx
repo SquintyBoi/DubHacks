@@ -4,6 +4,7 @@ import './LoginSignup.css';
 
 import user_icon from '../Assets/user_icon.png';
 import password_icon from '../Assets/password_icon.png';
+import man from '../Assets/man.png';
 
 const LoginSignup = () => {
     const [action, setAction] = useState("Sign Up");
@@ -42,6 +43,7 @@ const LoginSignup = () => {
 
     return (
         <div className='container'>
+            <img src={man} alt="Man" className="man-image" /> {/* Added image here */}
             <div className='header'>
                 <div className='text'>{action}</div>
                 <div className='underline'></div>
@@ -105,4 +107,5 @@ const LoginSignup = () => {
 };
 
 export default LoginSignup;
+
 
